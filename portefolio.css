@@ -1,0 +1,100 @@
+* {
+    background-color: rgba(251, 251, 251, 0.542);
+}
+
+header {
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: 'Cursive', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(47, 47, 47);
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px 20px;
+    
+}
+
+.presentation {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-style : outset;
+
+}
+
+/* Cible le conteneur image */
+.image {
+    grid-column: 2 / 3 ;
+    grid-row: 1 / 2 ;
+    text-align: center;
+}
+
+.projets_scolaires {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border-style : outset;
+
+}
+
+.experience_pro {
+    grid-column: 2 / 3;
+    grid-row:  2 / 3;
+    border-style : outset;
+}
+
+.projets_perso {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    border-style : outset;
+}
+
+h1 {
+    text-align: center;
+}
+/* Cible l'image */
+div.image > img {
+    max-width: 150px;
+    max-height: auto;
+}
+
+/* Cible la balise texte de présentation */
+div.presentation  p{
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+/* Cible tous ce qui a en dessous de projets scolaire sauf le titre h1 */
+.projets_scolaires  h2, .projets_scolaires  p {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_globale > h2 {
+    text-align: center;
+}
+
+.telechargement {
+    display: flex;
+    justify-content: space-around;
+}
+.telechargement_globale > h2 {
+    text-align: center;
+}
+.mon_footer {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contact_globale, .telechargement_globale {
+    flex: 1; /* Chaque div occupe une largeur égale */
+}
+
