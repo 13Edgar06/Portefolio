@@ -1,5 +1,5 @@
 * {
-    background-color: rgba(251, 251, 251, 0.542);
+    background-color: rgb(248, 239, 227);
 }
 
 header {
@@ -16,6 +16,11 @@ header {
     grid-template-rows: repeat(3, 1fr);
     gap: 30px 20px;
     
+}
+
+.container a {
+    color : inherit;
+    text-decoration: none;
 }
 
 .presentation {
@@ -98,3 +103,59 @@ div.presentation  p{
     flex: 1; /* Chaque div occupe une largeur égale */
 }
 
+.liens {
+    text-decoration: none;
+    color: rgb(102, 102, 249)
+}
+                        /* Présentation */
+/*---------------------------------------------------------------------------*/
+
+.presentation_global {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.presentation_texte, .image_edgar{
+    flex: 1;
+}
+
+.image_edgar {
+    max-width: 500px;
+    max-height: auto;
+}
+
+                        /* Projets scolaire */
+/*---------------------------------------------------------------------------*/
+
+.image_quadtree {
+    max-width: 500px;
+    max-height: auto;
+    padding-left: 10px;
+}
+
+.image_strategies_investissements {
+    max-width: 500px;
+    max-height: auto;
+    padding-left: 10px;
+}
+
+.projet_global_quadtree {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.projet_quadtree, .image_quadtree{
+    flex: 1;
+}
+
+.projet_global_polytech {
+    display: flex;
+    flex-wrap: wrap;
+    padding : 20px 10px 0px 10px;
+}
+
+.projet_polytech, .image_strategies_investissements {
+    flex: 1;
+}
