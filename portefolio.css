@@ -23,11 +23,14 @@ header {
     text-decoration: none;
 }
 
+.presentation_global{
+    border-style : outset;
+}
 .presentation {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    border-style : outset;
-
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 /* Cible le conteneur image */
@@ -37,17 +40,20 @@ header {
     text-align: center;
 }
 
+.projets_scolaires_global {
+    border-style : outset;
+}
+
 .projets_scolaires {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    border-style : outset;
-
 }
 
 .experience_pro {
     grid-column: 2 / 3;
     grid-row:  2 / 3;
     border-style : outset;
+    border-color: black;
 }
 
 .projets_perso {
@@ -68,13 +74,15 @@ div.image > img {
 /* Cible la balise texte de présentation */
 div.presentation  p{
     font-size: 20px;
-    padding-left: 15px;
-    padding-right: 10px;
 }
 /* Cible tous ce qui a en dessous de projets scolaire sauf le titre h1 */
 .projets_scolaires  h2, .projets_scolaires  p {
     padding-left: 15px;
     font-size: 20px;
+}
+
+.experience_pro p, .experience_pro > h2{
+    padding-left: 10px
 }
 
 .contact {
@@ -101,6 +109,13 @@ div.presentation  p{
 
 .contact_globale, .telechargement_globale {
     flex: 1; /* Chaque div occupe une largeur égale */
+}
+
+.presentation  p, .projets_scolaires  h1, .projets_scolaires h2, .projets_scolaires p, .experience_pro  h1, .experience_pro h2, .experience_pro p, .projets_scolaires, .cliquez_ici {
+    background-color: inherit;
+}
+.presentation:hover, /*.experience_pro:hover,*/ .projets_scolaires_global:hover {
+    background-color: rgb(255, 224, 159);
 }
 
 .liens {
@@ -133,9 +148,21 @@ div.presentation  p{
     padding-left: 10px;
 }
 
+.image_quadtree2 {
+    max-width: 500px;
+    max-height: auto;
+    padding-left: 10px;
+}
+
 .image_strategies_investissements {
     max-width: 500px;
     max-height: auto;
+    padding-left: 10px;
+}
+
+.image_strategies_investissements2{
+    max-width: 500px;
+    max-height: 300px;
     padding-left: 10px;
 }
 
@@ -146,7 +173,7 @@ div.presentation  p{
     padding-right: 10px;
 }
 
-.projet_quadtree, .image_quadtree{
+.projet_quadtree, .image_quadtree, .image_quadtree2{
     flex: 1;
 }
 
@@ -156,6 +183,8 @@ div.presentation  p{
     padding : 20px 10px 0px 10px;
 }
 
-.projet_polytech, .image_strategies_investissements {
+.projet_polytech, .image_strategies_investissements, .image_strategies_investissements2 {
     flex: 1;
 }
+
+
