@@ -6,9 +6,16 @@
 header {
     font-size: 55px;
     margin-top: 15px;
-    font-family: 'Cursive', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Playwrite RO', 'Arial Narrow', Arial, sans-serif;
     color: rgb(47, 47, 47);
     text-align: center;
+    /* text-shadow:
+  1px 1px 2px red,
+  0 0 1em blue,
+  0 0 0.2em blue; */
+
+  /* text-shadow: rgb(210, 58, 31) 1px 0 10px; */
+  text-shadow: red 2px 5px;
 }
 
 .container {
@@ -30,7 +37,7 @@ header {
     grid-row: 1 / 2;
     padding-left: 15px;
     padding-right: 10px;
-    border-style : outset;
+    border-style :double;
 }
 
 /* Cible le conteneur image */
@@ -41,7 +48,7 @@ header {
 }
 
 .projets_scolaires_global {
-    border-style : outset;
+    border-style : double;
 }
 
 .projets_scolaires {
@@ -52,14 +59,14 @@ header {
 .experience_pro {
     grid-column: 2 / 3;
     grid-row:  2 / 3;
-    border-style : outset;
+    border-style : double;
     border-color: black;
 }
 
 .projets_perso {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    border-style : outset;
+    border-style : double;
 }
 
 h1 {
@@ -126,21 +133,15 @@ div.presentation  p{
 @media screen and (max-width: 960px) {
     .mon_footer {
         display: flex;
-        flex-direction: column; /* Force une disposition verticale */
-        align-items: center; /* Centre les éléments */
-        gap: 20px; /* Ajoute de l’espace entre eux */
-    }
-
-    .contact_globale,
-    .telechargement_globale {
-        flex: none; /* Supprime l'effet de répartition égalitaire */
-        width: 100%; /* Chaque div prend toute la largeur */
-        text-align: center; /* Centre le contenu */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
     }
 
     .contact,
     .telechargement {
-        flex-direction: column; /* Change aussi la disposition interne */
+        flex-direction: column; /* Change la disposition interne */
         gap: 10px;
     }
 }
@@ -150,6 +151,11 @@ div.presentation  p{
 .presentation_global {
     display: flex;
     flex-wrap: wrap;
+}
+
+.presentation_texte {
+    padding-left: 10px;
+    font-size: 20px;
 }
 
 .presentation_texte, .image_edgar{
@@ -163,7 +169,13 @@ div.presentation  p{
 
                         /* Projets scolaire */
 /*---------------------------------------------------------------------------*/
+.projet_polytech h2, .projet_quadtree h2 {
+    font-size: 35px;
+}
 
+.projet_quadtree p, .projet_polytech p {
+    font-size: 20px
+}
 .image_quadtree {
     max-width: 500px;
     max-height: auto;
