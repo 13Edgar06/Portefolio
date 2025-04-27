@@ -4,18 +4,18 @@
 }
 
 header {
-    font-size: 55px;
+    font-size: 45px;
     margin-top: 15px;
     font-family: 'Playwrite RO', 'Arial Narrow', Arial, sans-serif;
     color: rgb(47, 47, 47);
     text-align: center;
     text-shadow:
-  1px 1px 2px red,
+  1px 1px 2px rgb(255, 224, 159),
   0 0 1em blue,
   0 0 0.2em blue;
 
-  /* text-shadow: rgb(210, 58, 31) 1px 0 10px; */
-  /* text-shadow: red 2px 5px; */
+  /* text-shadow: rgb(255, 224, 159) 1px 0 10px; */
+  /* text-shadow: rgb(255, 224, 159); */
 }
 
 .container {
@@ -92,6 +92,10 @@ div.presentation  p{
     padding-left: 10px
 }
 
+.experience_pro p {
+    font-size: 20px;
+}
+
 .contact {
     display: flex;
     justify-content: space-around;
@@ -118,6 +122,9 @@ div.presentation  p{
     flex: 1; /* Chaque div occupe une largeur égale */
 }
 
+ .cliquez_ici {
+    font-size: 20px
+ }
 .presentation  p, .projets_scolaires  h1, .projets_scolaires h2, .projets_scolaires p, .experience_pro  h1, .experience_pro h2, .experience_pro p, .projets_scolaires, .cliquez_ici {
     background-color: inherit;
 }
@@ -170,11 +177,11 @@ div.presentation  p{
                         /* Projets scolaire */
 /*---------------------------------------------------------------------------*/
 .projet_polytech h2, .projet_quadtree h2 {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .projet_quadtree p, .projet_polytech p {
-    font-size: 20px
+    font-size: 25px
 }
 .image_quadtree {
     max-width: 500px;
