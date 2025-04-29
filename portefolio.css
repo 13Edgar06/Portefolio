@@ -245,6 +245,13 @@ div.presentation  p{
 .presentation_texte {
     padding-left: 10px;
     font-size: 22px;
+    background-color: rgb(251, 215, 131);
+    padding: 0 15px 0 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.presentation_texte p {
+    background-color: inherit;
 }
 
 .presentation_texte, .image_edgar{
