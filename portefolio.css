@@ -124,7 +124,7 @@ div.presentation  p{
 }
 
 .adresse_mail, .linkedin, .telephone {
-    background-color: rgb(156, 129, 117);
+    background-color: rgb(212, 191, 182);
 }
 
 .contact_globale {
@@ -164,7 +164,7 @@ div.presentation  p{
 
 .contact_globale, .telechargement_globale {
     flex: 1; /* Chaque div occupe une largeur égale */
-    background-color: rgb(156, 129, 117);
+    background-color: rgb(212, 191, 182);
 }
 
  .cliquez_ici {
