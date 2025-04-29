@@ -1,6 +1,7 @@
 * {
     /* background-color: gray; */
-    background-color: rgb(248, 239, 227);
+    background-color: rgb(254, 249, 240);
+    color: rgb(47, 47, 47);
 }
 
 header {
@@ -9,13 +10,20 @@ header {
     font-family: 'Playfair Display', 'Arial Narrow', Arial, sans-serif;
     color: rgb(47, 47, 47);
     text-align: center;
-    text-shadow:
+    /* text-shadow:
   1px 1px 2px rgb(255, 224, 159),
   0 0 1em blue,
-  0 0 0.2em blue;
+  0 0 0.2em blue; */
 
   /* text-shadow: rgb(255, 224, 159) 1px 0 10px; */
   /* text-shadow: rgb(255, 224, 159); */
+}
+.link2{
+    text-decoration: none;
+}  
+
+.gros_titre:hover {
+    font-size: 100px;
 }
 
 .container {
@@ -33,11 +41,12 @@ header {
 
 
 .presentation {
+    background-color: rgb(246, 180, 25);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     padding-left: 15px;
     padding-right: 10px;
-    border-style :double;
+    border-radius: 0px 20px 0px 20px;
 }
 
 /* Cible le conteneur image */
@@ -45,10 +54,16 @@ header {
     grid-column: 2 / 3 ;
     grid-row: 1 / 2 ;
     text-align: center;
+    align-content: center;
+}
+
+.image img {
+    border-radius: 45%;
 }
 
 .projets_scolaires_global {
-    border-style : double;
+    background-color: rgb(122, 250, 229);
+    border-radius: 0px 20px 0px 20px;
 }
 
 .projets_scolaires {
@@ -57,23 +72,33 @@ header {
 }
 
 .experience_pro {
+    background-color: rgb(83, 158, 248);
     grid-column: 2 / 3;
     grid-row:  2 / 3;
-    border-style : double;
-    border-color: black;
+    border-radius: 0px 20px 0px 20px;
 }
 
 .projets_perso {
+    background-color: rgb(67, 173, 37);
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    border-style : double;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.projets_perso p{
+    font-size: 22px;
+}
+
+.projets_perso * {
+    background-color: inherit;
+    padding-left: 10px;
 }
 
 h1 {
     text-align: center;
 }
 /* Cible l'image */
-div.image > img {
+div.image img {
     max-width: 150px;
     max-height: auto;
 }
@@ -162,7 +187,7 @@ div.presentation  p{
 
 .presentation_texte {
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .presentation_texte, .image_edgar{
