@@ -2,12 +2,14 @@
     /* background-color: gray; */
     background-color: rgb(254, 249, 240);
     color: rgb(47, 47, 47);
+    font-family: 'Montserrat', 'Geneva', Tahoma, sans-serif;
 }
 
 header {
     font-size: 45px;
     margin-top: 15px;
-    font-family: 'Playfair Display', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Playfair Display', 'Arial Narrow', Arial, sans-serif; */
+    /* font-family: Montserra, Geneva, Tahoma, sans-serif; */
     color: rgb(47, 47, 47);
     text-align: center;
     /* text-shadow:
@@ -76,10 +78,11 @@ header {
     grid-column: 2 / 3;
     grid-row:  2 / 3;
     border-radius: 0px 20px 0px 20px;
+    padding-left: 10px;
 }
 
 .projets_perso {
-    background-color: rgb(67, 173, 37);
+    background-color: rgb(180, 216, 156);
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     border-radius: 0px 20px 0px 20px;
@@ -178,7 +181,7 @@ div.presentation  p{
     }
 }
 
-@media  screen and (max-width: 1240px) {
+@media screen and (max-width: 1240px) {
         /* Page projets scolaires */
 
         .projet_global_quadtree {
@@ -193,6 +196,14 @@ div.presentation  p{
             flex-direction: column;
             gap: 10px;
         }
+}
+
+@media screen and (max-width : 995px){
+    .presentation_global {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
                         /* Présentation */
 /*---------------------------------------------------------------------------*/
