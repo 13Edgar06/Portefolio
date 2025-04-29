@@ -127,6 +127,11 @@ div.presentation  p{
     background-color: rgb(212, 191, 182);
 }
 
+.linkedin {
+    padding-top: 10px;
+}
+
+
 .contact_globale {
     border-radius: 20px 0px 0px 20px;
 }
@@ -141,6 +146,7 @@ div.presentation  p{
     display: flex;
     justify-content: space-around;
     background-color: inherit;
+    padding-top: 5px;
 }
 
 .telechargement_globale {
@@ -161,7 +167,9 @@ div.presentation  p{
     margin-top: 30px;
 }
 
-
+.image_quadtree, .image_quadtree2, .image_strategies_investissements, .image_strategies_investissements2 {
+    padding-top: 100px;
+}
 .contact_globale, .telechargement_globale {
     flex: 1; /* Chaque div occupe une largeur égale */
     background-color: rgb(212, 191, 182);
@@ -200,14 +208,13 @@ div.presentation  p{
     }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1650px) {
         /* Page projets scolaires */
 
         .projet_global_quadtree {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            
+            gap: 10px;            
         }
     
         .projet_global_polytech {
@@ -253,12 +260,14 @@ div.presentation  p{
 }
 
 .projet_quadtree p, .projet_polytech p {
-    font-size: 25px
+    font-size: 25px;
+    text-align: justify;
 }
 .image_quadtree {
     max-width: 500px;
     max-height: auto;
     padding-left: 10px;
+    margin-left: 10px;
 }
 
 .image_quadtree2 {
@@ -271,6 +280,7 @@ div.presentation  p{
     max-width: 500px;
     max-height: auto;
     padding-left: 10px;
+    margin-left: 10px;
 }
 
 .image_strategies_investissements2{
