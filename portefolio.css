@@ -177,6 +177,23 @@ div.presentation  p{
         gap: 10px;
     }
 }
+
+@media  screen and (max-width: 1240px) {
+        /* Page projets scolaires */
+
+        .projet_global_quadtree {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+    
+        .projet_global_polytech {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+}
                         /* Présentation */
 /*---------------------------------------------------------------------------*/
 
@@ -252,5 +269,7 @@ div.presentation  p{
 .projet_polytech, .image_strategies_investissements, .image_strategies_investissements2 {
     flex: 1;
 }
+
+
 
 
