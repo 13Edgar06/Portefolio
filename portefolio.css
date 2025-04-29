@@ -34,7 +34,7 @@ header {
 
 
 .presentation {
-    background-color: rgb(246, 180, 25);
+    background-color: rgb(251, 215, 131);
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     padding-left: 15px;
@@ -115,27 +115,56 @@ div.presentation  p{
 .contact {
     display: flex;
     justify-content: space-around;
+    background-color: inherit;
+    border-radius: 0px 0px 0px 20px;
 }
+
+.contact p {
+    background-color: inherit;
+}
+
+.adresse_mail, .linkedin, .telephone {
+    background-color: rgb(156, 129, 117);
+}
+
+.contact_globale {
+    border-radius: 20px 0px 0px 20px;
+}
+
 
 .contact_globale > h2 {
     text-align: center;
+    background-color: inherit;
 }
 
 .telechargement {
     display: flex;
     justify-content: space-around;
+    background-color: inherit;
 }
+
+.telechargement_globale {
+    border-radius: 0px 20px 20px 0px;
+}
+
 .telechargement_globale > h2 {
     text-align: center;
+    background-color: inherit;
+}
+
+.telechargement a {
+    background-color: inherit;
 }
 .mon_footer {
     display: flex;
     justify-content: space-around;
-    
+    margin-top: 30px;
 }
+
 
 .contact_globale, .telechargement_globale {
     flex: 1; /* Chaque div occupe une largeur égale */
+    background-color: rgb(156, 129, 117);
 }
 
  .cliquez_ici {
@@ -150,7 +179,9 @@ div.presentation  p{
 
 .liens {
     text-decoration: none;
-    color: rgb(102, 102, 249)
+    color: rgb(47, 47, 47);
+    text-decoration: underline;
+    background-color: inherit;
 }
 
 @media screen and (max-width: 960px) {
